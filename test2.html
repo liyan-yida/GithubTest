@@ -1,0 +1,57 @@
+ 
+<html> 
+<head> 
+<title>연습할 제목</title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head> 
+<script>
+$(function() {
+    //aaa();
+    result=[]
+    
+     $.ajax({
+            url:'./time2.php',
+            type:'post',
+            data:{'a':aa
+                ,'b':bb},
+            success:function(result){
+                cvb(result)
+                $('#time').text(data);
+            }
+        })
+});
+
+function aaa(){
+a=$("#abc");
+a.html('<td>3</td><td>3</td><td>3</td>')
+}
+function bbb(){
+$("#test").html('저곳')
+
+}
+</script>
+<body>
+
+<a id='test' onclick='bbb()'>이곳</a>에서 연습하세요..! <br>
+<a href='http://naver.com'>네이버 링크</a><br>
+<table border=1>
+<tr id='abc'>
+    <td >1
+    </td>
+    <td>2
+    </td>
+    <td>3
+    </td>
+</tr>
+<tr>
+    <td onclick='aaa()'>4
+    </td>
+    <td colspan='2'>5
+    </td>
+    
+</tr>
+</table>
+ 
+
+</body> 
+</html> 
